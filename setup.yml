@@ -1,0 +1,14 @@
+---
+
+- name: Playbook to configure My Desktop
+  hosts: localhost
+  connection: local
+  vars_files:
+    - vars/common.yml
+
+  roles:
+    - { role: config-desktop }
+#    - { role: chrome  }
+#    - { role: atom    }
+#    - { role: docker  }
+#    - { role: vagrant }
