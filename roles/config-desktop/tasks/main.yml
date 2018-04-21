@@ -1,0 +1,26 @@
+---
+# tasks file for config-desktop
+
+- name: Configure users
+  include_tasks: user.yml
+  tags:
+    - users
+    - all
+
+- name: Configure pacotes
+  include_tasks: packages.yml
+  tags:
+    - packages
+    - all
+
+- name: Configure git
+  include_tasks: git.yml
+  tags:
+    - git
+    - all
+
+- name: Configure OwnClient
+  include_tasks: ownclient.yml
+  tags:
+    - ownclient
+    - all

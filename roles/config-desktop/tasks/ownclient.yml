@@ -1,0 +1,9 @@
+---
+
+- name: Configurando repositorio
+  include_tasks: "{{ ansible_distribution }}_{{ ansible_distribution_version }}_{{ ansible_userspace_architecture }}"
+
+- name: Install OwnCloud Client
+  apt:
+    name: owncloud-client
+    state: present

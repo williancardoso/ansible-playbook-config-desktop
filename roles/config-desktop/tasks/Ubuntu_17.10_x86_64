@@ -1,0 +1,11 @@
+---
+
+- name: Preparando Repositorio
+  shell: |
+    wget -nv https://download.opensuse.org/repositories/isv:ownCloud:desktop/Ubuntu_17.10/Release.key -O /tmp/Release.key
+    apt-key add - < /tmp/Release.key
+
+#- name: Upgrade all packages to the latest version
+#  apt:
+#    name: "*"
+#    state: latest
