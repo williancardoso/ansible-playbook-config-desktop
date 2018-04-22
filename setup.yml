@@ -7,8 +7,8 @@
     - vars/common.yml
 
   roles:
-    - { role: config-desktop }
-    - { role: chrome  }
-    - { role: atom    }
-    - { role: docker  }
-    - { role: vagrant }
+    - { role: desktop, tags: ['desktop'] }
+    - { role: chrome,  tags: ['chrome']  }
+    - { role: atom,    tags: ['atom']    }
+    - { role: docker,  tags: ['docker']  }
+    - { role: vagrant, tags: ['vagrant'] }

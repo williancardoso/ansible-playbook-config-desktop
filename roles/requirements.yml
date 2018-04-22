@@ -14,6 +14,6 @@
   src: https://github.com/jdauphant/ansible-role-vagrant.git
   version: master
 
-- name: config-desktop
+- name: desktop
   src: https://github.com/williancardoso/ansible-role-config-desktop.git
   version: master
